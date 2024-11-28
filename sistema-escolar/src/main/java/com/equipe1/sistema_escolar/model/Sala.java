@@ -8,6 +8,7 @@ import jakarta.persistence.*;
 public class Sala {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "pk_id_sala")
     private Long Id;
 
     @Column(name = "nome_sala")
